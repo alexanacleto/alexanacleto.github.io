@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Trvia Quiz</title>
+<style>
+body{
+	background-image: url("CPT_images/record.png");
+	background-repeat : no-repeat;
+	position:absolute; 
+	margin-left: 27.5%;
+	margin-top: 20%;
+	font:.5cm;
+	font-size:10px;
+	font-family:Georgia;
+}
+</style>
+<script>
+
+
+i = 1 // counter variable
+var score=0
+var goodaudio = new Audio('CPT_images/goodaudio.mp3');
+var badaudio = new Audio('CPT_images/badaudio.mp3');
+
+function main(){  // main part of program
+if (i==1){ 
+	document.view.qnum.value=i;  // puts question # in text box
+	// document.view.question.value ="Who has been given the tag of King of Pop?\na) Justin Bieber \nb) Prince \nc) Michael Jackson \nd) Freddie Mercury ";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="c"  // assigns the correct answer
+
+	ans=prompt(i+'.)    Who has been given the tag of King of Pop ? \na) Justin Bieber\nb) Prince\nc) Michael Jackson\nd) Freddies Mercury')  // gives user a chance to answer
+
+}// end of question 1
+else if (i==2){ 
+	document.view.qnum.value=i;  // puts question # in text box
+	// document.view.question.value ="Which musical instrument has four strings and is played with a bow?\na) Piano\nb) Violin\nc) Guitar\nd) Harp ";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="b"  // assigns the correct answer
+
+	ans=prompt(i+'.) Which musical instrument has four strings and is played with a bow?\na) Cello\nb) Violin\nc) Guitar\nd) Bass ')  // gives user a chance to answer
+	
+}// end of question 2
+
+else if (i==3){ 
+	document.view.qnum.value=i;  // puts question # in text box
+	// document.view.question.value ="Which instrument has black and white keys? \na) Piano \nb) Recprder \nc) Accordian \nd) Harp";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="a"  // assigns the correct answer
+
+	ans=prompt(i+'.) Which instrument has black and white keys? \na) Piano \nb) Recprder \nc) Accordian \nd) Harp')  // gives user a chance to answer
+	
+}// end of question 3
+
+else if (i==4){ 
+	document.view.qnum.value=i;  // puts question # in text box
+	// document.view.question.value ="Who is considered as the Greek God of Music? \na) Posieden \nb) Hermes \nc) Hephaestus \nd) Apollo";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="d"  // assigns the correct answer
+
+	ans=prompt(i+'.) Who is considered as the Greek God of Music? \na) Posieden \nb) Hermes \nc) Hephaestus \nd) Apollo ')  // gives user a chance to answer
+	
+}// end of question 4
+
+else if (i==5){ 
+	document.view.qnum.value=i;  // puts question # in text box
+	// document.view.question.value ="If a musical tone is lowered using a flat, what is it that refers to a higher tone? \na) Sharp \nb) Tall \nc) High \nd) Direct";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="a"  // assigns the correct answer
+
+	ans=prompt(i+'.) If a musical tone is lowered using a flat, what is it that refers to a higher tone? \na) Sharp \nb) Tall \nc) High \nd) Direct ')  // gives user a chance to answer
+	
+}// end of question 5
+
+else if (i==6){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value ="Robert Plant, John Paul Jones, Jimmy Page and John Bonham were band members of which famous hard rock band that is name is similar to a blimp? \na) ZZ Top \nb) Van Halen \nc) Led Zeppelin \nd) AC/DC";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="c"  // assigns the correct answer
+
+	ans=prompt(i+'.) Robert Plant, John Paul Jones, Jimmy Page and John Bonham were band members of which famous hard rock band that is name is similar to a blimp? \na) ZZ Top \nb) Van Halen \nc) Led Zeppelin \nd) AC/DC')  // gives user a chance to answer
+	
+}// end of question 6
+
+	else if (i==7){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value =" The band ABBA belonged to which country? \na) Germany \nb) Poland \nc) Spain \nd) Sweden";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="d"  // assigns the correct answer
+
+	ans=prompt(i+'.)  The band ABBA belonged to which country? \na) Germany \nb) Poland \nc) Spain \nd) Sweden ')  // gives user a chance to answer
+	
+}// end of question 7
+
+else if (i==8){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "Which band wrote the song Sweet Child O Mine? \na) Bon Jovi \nb) Aerosmith \nc) Guns N Roses \nd) The Who";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="c"  // assigns the correct answer
+
+	ans=prompt(i+'.)  Which band wrote the song Sweet Child O Mine? \na) Bon Jovi \nb) Aerosmith \nc) Guns N Roses \nd) The Who ')  // gives user a chance to answer
+	
+}// end of question 8
+
+else if (i==9){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "Which is the band that was formed in 1962 and is still making music? \na) The Rolling Stones \nb) Nirvana \nc) Metallica \nd) Deep Purple";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="a"  // assigns the correct answer
+
+	ans=prompt(i+'.) Which is the band that was formed in 1962 and is still making music? \na) The Rolling Stones \nb) Nirvana \nc) Metallica \nd) Deep Purple')  // gives user a chance to answer
+
+}// end of question 9
+
+else if (i==10){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "A general musical scale comprises of how many notes? \na) Eight \nb) Ten \nc) Twelve \nd) Eleven";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="a"  // assigns the correct answer
+
+	ans=prompt(i+'.) A general musical scale comprises of how many notes? \na) Eight \nb) Ten \nc) Twelve \nd) Eleven')  // gives user a chance to answer
+
+}// end of question 10
+	
+
+	else if (i==11){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "What was the first song to be preformed in outer space? \na) Happy Birthday \nb) In the Ghetto \nc) Sweet Caroline \nd) Bye Bye Bye";
+	// above code puts the question in the textarea, note the use of \n for "new line"
+	correct="a"  // assigns the correct answer
+	ans=prompt(i+'.) What was the first song to be preformed in outer space? \na) Happy Birthday \nb) In the Ghetto \nc) Sweet Caroline \nd) Bye Bye Bye')  // gives user a chance to answer
+}// end of question 11
+	
+	else if (i==12){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "Which beatle was rumoured to have died and replaced by a double? \na) John Lennon \nb) Paul McCartney \nc) George Harrison \nd) Ringo Starr";
+	// above code puts the question in the textarea, note the use of \n for "new line"
+	correct="b"  // assigns the correct answer
+	ans=prompt(i+'.) Which beatle was rumoured to have died and replaced by a double? \na) John Lennon \nb) Paul McCartney \nc) George Harrison \nd) Ringo Starr')  // gives user a chance to answer
+}// end of question 12
+		
+	else if (i==13){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "Which beatle was rumoured to have died and replaced by a double? \na) John Lennon \nb) Paul McCartney \nc) George Harrison \nd) Ringo Starr";
+	// above code puts the question in the textarea, note the use of \n for "new line"
+	correct="b"  // assigns the correct answer
+	ans=prompt(i+'.) Which beatle was rumoured to have died and replaced by a double? \na) John Lennon \nb) Paul McCartney \nc) George Harrison \nd) Ringo Starr')  // gives user a chance to answer
+}// end of question 13
+
+else if (i==14){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "In 1957 which Rock and Roll Star was only filmed from the waist up because it was considered that his hip swinging was too suggestive? \na) Frank Sinatra \nb) Mick Jagger \nc) Elvis Presley \nd) Jackie Wilson";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="c"  // assigns the correct answer
+
+	ans=prompt(i+'.)  In 1957 which Rock and Roll Star was only filmed from the waist up because it was considered that his hip swinging was too suggestive? \na) Frank Sinatra \nb) Mick Jagger \nc) Elvis Presley \nd) Jackie Wilson')  // gives user a chance to answer
+
+}// end of question 14
+
+else if (i==15){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "What famous guitar player was thrown out of school for holding the hand of a white girl in class? \na) Keith Richards \nb) Eddie Van Halen \nc) Les Paul \nd) Jimi Hendrix";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="d"  // assigns the correct answer
+
+	ans=prompt(i+'.)  What famous guitar player was thrown out of school for holding the hand of a white girl in class? \na) Keith Richards \nb) Eddie Van Halen \nc) Les Paul \nd) Jimi Hendrix')  // gives user a chance to answer
+
+}// end of question 15
+
+else if (i==16){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "What classical composer wrote the majority of his music when he was deaf? \na) Wolfgang Amadeus Mozart \nb) Johann Sebastian Bach \nc) Frédéric Chopin \nd) Ludwig van Beethoven";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="d"  // assigns the correct answer
+
+	ans=prompt(i+'.)  What classical composer wrote the majority of his music when he was deaf? \na) Wolfgang Amadeus Mozart \nb) Johann Sebastian Bach \nc) Frédéric Chopin \nd) Ludwig van Beethoven')  // gives user a chance to answer
+
+}// end of question 16
+
+else if (i==17){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "What country’s national orchestra is bigger than its army? \na) Paris \nb) Monaco \nc) Peru \nd) Australia";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="b"  // assigns the correct answer
+
+	ans=prompt(i+'.)  What country’s national orchestra is bigger than its army? \na) Paris \nb) Monaco \nc) Peru \nd) Australia')  // gives user a chance to answer
+
+}// end of question 17
+
+else if (i==18){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "What classical composer had a piano designed with special smaller keys, as his hands were so small? \na) Wolfgang Amadeus Mozart \nb) Johann Sebastian Bach \nc) Frédéric Chopin \nd) Ludwig van Beethoven";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="c"  // assigns the correct answer
+
+	ans=prompt(i+'.)  What classical composer had a piano designed with special smaller keys, as his hands were so small? \na) Wolfgang Amadeus Mozart \nb) Johann Sebastian Bach \nc) Frédéric Chopin \nd) Ludwig van Beethoven')  // gives user a chance to answer
+
+}// end of question 18
+
+else if (i==19){ 
+	document.view.qnum.value=i;  // puts question # in text body
+	// document.view.question.value = "Which popular musician bought ATV Music and every Beatles song for $47 million in 1985? \na) Michael Jackson \nb) Whitney Houston \nc) Prince \nd) Bon Jovi";
+
+	// above code puts the question in the textarea, note the use of \n for "new line"
+
+	correct="a"  // assigns the correct answer
+
+	ans=prompt(i+'.)  Which popular musician bought ATV Music and every Beatles song for $47 million in 1985? \na) Michael Jackson \nb) Whitney Houston \nc) Prince \nd) Bon Jovi')  // gives user a chance to answer
+
+}// end of question 19
+
+	
+	document.view.go.focus();  // puts the focus on the "Next Question >" button so the enter key will activate it
+
+	if (correct==ans){  // compares the real answer to the users answer
+
+		document.view.question.value =" You are right! :D"  // puts comment in textarea
+		score++;
+		goodaudio.play();
+	}
+	else{
+		document.view.question.value =" You are wrong :("  // puts comment in textarea
+		badaudio.play();
+	}
+	i++; // keeps track of number of questions asked
+
+
+	if (i > 19){
+
+    alert("End of Game\nYour score is: "+ score + "/" + 19 + "\nYou scored: " + (score / 19) * 100 + "%" );
+
+	};
+} //end of main function
+
+</script>
+</head>
+<body LINK="F7DD5E" VLINK="F7DD5E" ALINK="F7DD5E" onLoad="main()">
+
+<img src="CPT_images/musicnotes.gif" alt="music" style="width:275px;height:50px;">
+
+<FORM name="view">  
+	Question: &nbsp;<input type="text" name="qnum" size="2">&nbsp;&nbsp;<input type="button" name="go" value="Next Question >" onClick=main()>
+	<br><br>
+	<TEXTAREA COLS=36 ROWS=5 name="question" wrap=virtual"></TEXTAREA> 
+</FORM> 
+
+<img src="CPT_images/musicnotes.gif" alt="music" style="width:275px;height:50px;">
+
+</body>
+
+</html>
+
